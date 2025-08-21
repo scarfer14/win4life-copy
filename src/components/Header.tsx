@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/card';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
-import logo from '@/assets/win4life-logo.png';
+import exactLogo from '@/assets/exact-logo.png';
 
 export const Header: React.FC = () => {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
@@ -16,7 +16,7 @@ export const Header: React.FC = () => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <img 
-            src={logo} 
+            src={exactLogo} 
             alt="WIN FOR Life" 
             className="h-12 w-auto object-contain mr-4"
           />
@@ -30,36 +30,44 @@ export const Header: React.FC = () => {
                 Login
               </Button>
             </DialogTrigger>
-            <DialogContent className="bg-gaming-dark border-primary">
+            <DialogContent className="modal-gaming-bg modal-gaming-border">
               <DialogHeader>
-                <DialogTitle className="text-foreground text-center">Login</DialogTitle>
+                <DialogTitle className="text-white text-center text-lg">Login</DialogTitle>
               </DialogHeader>
               <div className="space-y-4">
                 <div>
-                  <Label htmlFor="username">Username</Label>
+                  <Label htmlFor="username" className="text-gray-300">Username</Label>
                   <Input 
                     id="username"
-                    className="bg-input border-primary text-foreground"
+                    className="bg-black border-green-500 text-white"
                     placeholder="Enter username"
                   />
                 </div>
                 <div>
-                  <Label htmlFor="password">Password</Label>
+                  <Label htmlFor="password" className="text-gray-300">Password</Label>
                   <Input 
                     id="password"
                     type="password"
-                    className="bg-input border-primary text-foreground"
+                    className="bg-black border-green-500 text-white"
                     placeholder="Enter password"
                   />
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox id="remember" />
-                  <Label htmlFor="remember" className="text-sm">Remember me</Label>
+                  <Label htmlFor="remember" className="text-sm text-gray-300">Remember me</Label>
                 </div>
-                <Button variant="gaming" className="w-full">
+                <Button 
+                  variant="gaming" 
+                  className="w-full"
+                  style={{
+                    background: 'hsl(142, 69%, 45%)',
+                    color: 'white',
+                    fontWeight: '600'
+                  }}
+                >
                   Login
                 </Button>
-                <p className="text-center text-xs text-muted-foreground">
+                <p className="text-center text-xs text-gray-400">
                   Forgot Password? Please contact our online customer service.
                 </p>
               </div>
@@ -73,59 +81,67 @@ export const Header: React.FC = () => {
                 Register
               </Button>
             </DialogTrigger>
-            <DialogContent className="bg-gaming-dark border-primary">
+            <DialogContent className="modal-gaming-bg modal-gaming-border">
               <DialogHeader>
-                <DialogTitle className="text-foreground text-center">Register</DialogTitle>
+                <DialogTitle className="text-white text-center text-lg">Register</DialogTitle>
               </DialogHeader>
               <div className="space-y-4">
                 <div>
-                  <Label htmlFor="reg-username">Username</Label>
+                  <Label htmlFor="reg-username" className="text-gray-300">Username</Label>
                   <Input 
                     id="reg-username"
-                    className="bg-input border-primary text-foreground"
+                    className="bg-black border-green-500 text-white"
                     placeholder="Enter username"
                   />
                 </div>
                 <div>
-                  <Label htmlFor="reg-password">Password</Label>
+                  <Label htmlFor="reg-password" className="text-gray-300">Password</Label>
                   <Input 
                     id="reg-password"
                     type="password"
-                    className="bg-input border-primary text-foreground"
+                    className="bg-black border-green-500 text-white"
                     placeholder="Enter password"
                   />
                 </div>
                 <div>
-                  <Label htmlFor="fullname">Full Name</Label>
+                  <Label htmlFor="fullname" className="text-gray-300">Full Name</Label>
                   <Input 
                     id="fullname"
-                    className="bg-input border-primary text-foreground"
+                    className="bg-black border-green-500 text-white"
                     placeholder="Enter full name"
                   />
                 </div>
                 <div>
-                  <Label htmlFor="mobile">Mobile</Label>
+                  <Label htmlFor="mobile" className="text-gray-300">Mobile</Label>
                   <Input 
                     id="mobile"
-                    className="bg-input border-primary text-foreground"
+                    className="bg-black border-green-500 text-white"
                     placeholder="Enter mobile number"
                   />
                 </div>
                 <div>
-                  <Label htmlFor="referral">Referral ID (Optional)</Label>
+                  <Label htmlFor="referral" className="text-gray-300">Referral ID (Optional)</Label>
                   <Input 
                     id="referral"
-                    className="bg-input border-primary text-foreground"
+                    className="bg-black border-green-500 text-white"
                     placeholder="Enter referral ID"
                   />
                 </div>
                 <div className="flex items-center space-x-2">
                   <Checkbox id="terms" />
-                  <Label htmlFor="terms" className="text-sm">
+                  <Label htmlFor="terms" className="text-sm text-gray-300">
                     I have read terms and conditions
                   </Label>
                 </div>
-                <Button variant="gaming" className="w-full">
+                <Button 
+                  variant="gaming" 
+                  className="w-full"
+                  style={{
+                    background: 'hsl(142, 69%, 45%)',
+                    color: 'white',
+                    fontWeight: '600'
+                  }}
+                >
                   Register
                 </Button>
               </div>

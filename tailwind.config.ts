@@ -56,6 +56,10 @@ export default {
 					gold: 'hsl(var(--gaming-gold))',
 					green: 'hsl(var(--gaming-green))',
 					dark: 'hsl(var(--gaming-dark))',
+					'button-green': 'hsl(var(--gaming-button-green))',
+					'button-outline': 'hsl(var(--gaming-button-outline))',
+					'modal-bg': 'hsl(var(--gaming-modal-bg))',
+					border: 'hsl(var(--gaming-border))',
 				}
 			},
 			backgroundImage: {

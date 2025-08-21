@@ -39,13 +39,17 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Gaming specific colors */
-    --gaming-gold: 45 93% 47%;
-    --gaming-green: 142 76% 36%;
+    /* Gaming specific colors - Exact match to original */
+    --gaming-gold: 45 93% 60%;
+    --gaming-green: 142 69% 45%;
     --gaming-dark: 0 0% 0%;
-    --gaming-overlay: 0 0% 0% / 0.8;
-    --gaming-gradient: linear-gradient(135deg, hsl(142 76% 36%), hsl(45 93% 47%));
-    --gaming-glow: 0 0 20px hsl(142 76% 36% / 0.5);
+    --gaming-modal-bg: 0 0% 0% / 0.95;
+    --gaming-overlay: 0 0% 0% / 0.75;
+    --gaming-border: 142 69% 45%;
+    --gaming-button-green: 142 69% 45%;
+    --gaming-button-outline: 45 93% 60%;
+    --gaming-gradient: linear-gradient(135deg, hsl(142 69% 45%), hsl(45 93% 60%));
+    --gaming-glow: 0 0 20px hsl(142 69% 45% / 0.4);
   }
 }
 
@@ -62,5 +66,15 @@ All colors MUST be HSL.
 @layer utilities {
   .bg-gaming-overlay {
     background: hsl(var(--gaming-overlay));
+  }
+  
+  .modal-gaming-bg {
+    background: hsl(var(--gaming-modal-bg));
+    backdrop-filter: blur(2px);
+  }
+  
+  .modal-gaming-border {
+    border: 2px solid hsl(var(--gaming-border));
+    border-radius: 12px;
   }
 }
