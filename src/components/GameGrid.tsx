@@ -75,6 +75,7 @@ export const GameGrid: React.FC = () => {
                     color: 'white',
                     fontWeight: '600'
                   }}
+                  onClick={() => { window.location.href = "https://www.pots888.vip"; }}
                 >
                   Play Now
                 </Button>

@@ -18,10 +18,20 @@ export const HeroSection: React.FC = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button variant="gaming" size="lg" className="text-lg px-8 py-4">
+          <Button
+            variant="gaming"
+            size="lg"
+            className="text-lg px-8 py-4"
+            onClick={() => { window.location.href = "https://www.pots888.vip"; }}
+          >
             Start Playing Now
           </Button>
-          <Button variant="outline" size="lg" className="text-lg px-8 py-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+          <Button
+            variant="outline"
+            size="lg"
+            className="text-lg px-8 py-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            onClick={() => { window.location.href = "https://www.pots888.vip"; }}
+          >
             View All Games
           </Button>
         </div>

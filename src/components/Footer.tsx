@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
       <div className="container mx-auto px-4 text-center">
         <div className="flex items-center justify-center space-x-2 mb-4">
           <div className="bg-destructive text-destructive-foreground rounded-full w-8 h-8 flex items-center justify-center font-bold text-xs">
-            21
+            21+
           </div>
           <p className="text-foreground text-sm">
             Gaming for 21 years old and above only. Game responsibly and stay in control.
