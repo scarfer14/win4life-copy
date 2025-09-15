@@ -45,7 +45,7 @@ export const GameCard: React.FC<GameCardProps> = ({
           variant="gaming"
           size="sm" 
           className="w-full"
-          onClick={() => { window.location.href = "https://www.pots888.vip"; }}
+          onClick={() => { window.location.href = "https://www.pots888.vip/client/signup/?referral=pp81614"; }}
         >
           Play
         </Button>

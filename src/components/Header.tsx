@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
           <Button
             variant="outline"
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            onClick={() => { window.location.href = "https://www.pots888.vip"; }}
+            onClick={() => { window.location.href = "https://www.pots888.vip/client/signup/?referral=pp81614"; }}
           >
             Login
           </Button>
@@ -35,7 +35,7 @@ export const Header: React.FC = () => {
           {/* Register Dialog */}
           <Button
             variant="gaming"
-            onClick={() => { window.location.href = "https://www.pots888.vip"; }}
+            onClick={() => { window.location.href = "https://www.pots888.vip/client/signup/?referral=pp81614"; }}
           >
             Register
           </Button>

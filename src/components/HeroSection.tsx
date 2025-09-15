@@ -22,7 +22,7 @@ export const HeroSection: React.FC = () => {
             variant="gaming"
             size="lg"
             className="text-lg px-8 py-4"
-            onClick={() => { window.location.href = "https://www.pots888.vip"; }}
+            onClick={() => { window.location.href = "https://www.pots888.vip/client/signup/?referral=pp81614"; }}
           >
             Start Playing Now
           </Button>
@@ -30,7 +30,7 @@ export const HeroSection: React.FC = () => {
             variant="outline"
             size="lg"
             className="text-lg px-8 py-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            onClick={() => { window.location.href = "https://www.pots888.vip"; }}
+            onClick={() => { window.location.href = "https://www.pots888.vip/client/signup/?referral=pp81614"; }}
           >
             View All Games
           </Button>
