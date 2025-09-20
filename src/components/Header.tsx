@@ -35,7 +35,7 @@ export const Header: React.FC = () => {
           {/* Register Dialog */}
           <Button
             variant="gaming"
-            onClick={() => { window.location.href = "https://www.pots888.vip/client/signup/?referral=pp81614"; }}
+            onClick={() => { window.location.href = "https://www.pots888.vip/client/signup/?referral=cc11506"; }}
           >
             Register
           </Button>
